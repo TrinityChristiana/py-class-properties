@@ -1,15 +1,11 @@
-# **************************** Challenge: Solid Student ****************************
+# **************************** Challenge: Convert Student Object to a String ****************************
+
 '''
 Author: Trinity Terry
-pyrun: python solid_student.py
+pyrun: python obj_to_str.py
 '''
-
-# Define a Python class named Student. This class will have 5 properties.
-
+ 
 class Student:
-    # Define getters for all properties.
-    # Define a setter for all but the read only property.
-# Ensure that only the appropriate value can be assigned to each.
 
     def __init__(self):
         """
@@ -24,7 +20,6 @@ class Student:
         self.age = 0
         self.cohort_number = 0
 
-    # First name (string)
     @property
     def first_name(self):
         try:
@@ -39,7 +34,6 @@ class Student:
         else:
             raise TypeError("Please provide a string for value of first_name")
 
-    # Last name (string)
     @property
     def last_name(self):
         try:
@@ -54,7 +48,6 @@ class Student:
         else:
             raise TypeError("Please provide a string for value of last_name")
 
-    # Age (integer)
     @property
     def age(self):
         try:
@@ -69,7 +62,6 @@ class Student:
         else:
             raise TypeError("Please provide a integer for value of age")
 
-    # Cohort number (integer)
     @property
     def cohort_number(self):
         try:
@@ -84,8 +76,6 @@ class Student:
         else:
             raise TypeError("Please provide a integer for value of cohort_number")
 
-    # The full name property should return first name and last name separated by a space. It's value cannot be set.
-    # Full name (read-only string)
     @property
     def full_name(self):
         try:
@@ -93,5 +83,19 @@ class Student:
         except AttributeError:
             return 0
 
+    # Use the __str__ and __repr__ magic methods on your class to specify what an object's string representation should be. It's just like the toString() method in JavaScript.
+    # Change your class so that any objects created from it will be rerpesented as strings in the following format.
+            # Mike Ellis is 35 years old and is in cohort 39
+    
+    def __repr__(self):
+        return f"{self.full_name} is {self.age} years old and is in cohort {self.cohort_number}"
+
+
+
 trinity = Student()
-print(trinity.full_name)
+trinity.first_name = "Trinity"
+trinity.last_name = "Terry"
+trinity.age = 20
+trinity.cohort_number = 38
+
+print(trinity)
