@@ -14,7 +14,7 @@ This assignment is an individual exercise: [Directions here](https://github.com/
 - [Directions](https://github.com/TrinityTerry/py-class-properties/blob/master/directions/directions.md#practice-convert-student-object-to-a-string)
 
 ## Practice: Sensitive Information
-<!-- - [Code]() -->
+- [Code](https://github.com/TrinityTerry/py-class-properties/blob/master/py-files/sensitive_info.py#L1)
 - [Directions](https://github.com/TrinityTerry/py-class-properties/blob/master/directions/directions.md#practice-sensitive-information)
  
 ---
