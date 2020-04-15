@@ -1,6 +1,6 @@
 # Python Class Properties
 
-Created: 04-13-20 | Modified:
+Created: 04-15-20 | Modified:
 
 This assignment is an individual exercise: [Directions here](https://github.com/TrinityTerry/py-class-properties/blob/master/directions/directions.md)
 ---
