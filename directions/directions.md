@@ -141,7 +141,7 @@ Create a class to represent a patient of a doctor's office. The **`Patient`** cl
 1. Last name
 1. Address
 
-The first three properties should be read-only. First name and last name should not be exposed as properties at all, but instead expose a calculated property of `full_name`. Address should have a getter and setter.
+<!-- The first three properties should be read-only. First name and last name should not be exposed as properties at all, but instead expose a calculated property of `full_name`. Address should have a getter and setter. -->
 
 ```py
 cashew = Patient(
